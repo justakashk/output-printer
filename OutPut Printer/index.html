@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Output Printer</title>
+
+    <!-- Code By Akash Kumar - linkedin/justakashk -->
+
+</head>
+<body>
+    <div class="enterT"><input id="enter_Text" placeholder="Please Enter Texts" type="text"></div>
+    <div class="enterT"><input id="enterNum" placeholder="Enter Number" type="number"></div>
+    <div class="enterT"><button id="goButton" onclick="showResult()">Go</button></div> 
+    <h1>Output</h1>
+    <div id="result">
+        <li> Default </li>
+    </div>
+
+    <script>
+        const button = document.getElementById("goButton");
+        const result = document.getElementById("result");
+        let textValue = document.getElementById("enter_Text").value;
+        let Numvalue = document.getElementById("enterNum").value;
+
+        goButton.addEventListener('click', showResult());
+        function showResult()
+        {
+            result.innerHTML = ""
+
+            for(i=1;i<=document.getElementById("enterNum").value;i++)
+        {
+            result.innerHTML = result.innerHTML + `<li>${i}) ${document.getElementById("enter_Text").value}</li>`
+        }
+        }
+
+    </script>
+</body>
+</html>

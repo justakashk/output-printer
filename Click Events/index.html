@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 id="clickable">Click Here</h1>
+    <script>
+
+        // Step 1: Selecting the element
+
+        click = document.getElementById('clickable')
+
+        // Applying event listener to the element
+
+        click.addEventListener('dblclick', clickHandler)
+
+        // Functions are derived from the Function object in JavaScript
+        function clickHandler() {
+            click.innerHTML = "<h2 style='color: red;'>You Clicked Me</h2>"
+        }
+    </script>
+
+</body>
+</html>

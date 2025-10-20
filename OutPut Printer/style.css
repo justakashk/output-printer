@@ -1,0 +1,52 @@
+body
+{
+    background-color: aquamarine;
+}
+
+.enterT
+{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: -12px;
+    padding: 33px;
+}
+
+.enterT input {
+    padding: 12px;
+    border: none;
+    width: 500px;
+    
+}
+
+
+
+#goButton 
+{
+   margin: 0px auto;
+   border: none;
+   background-color: orangered;
+   color: aliceblue;
+   font-size: 22px;
+   cursor: pointer;
+   width: 500px;
+   padding: 10px;
+   border-radius: 12px;
+   
+}
+
+#result
+{
+    background-color: black;
+    color: green;
+    padding: 34px;
+    display: block;
+    height: 38vh;
+    font-size: 19px;
+    overflow-y: scroll;
+}
+
+#result li
+{
+   list-style: none;
+}
